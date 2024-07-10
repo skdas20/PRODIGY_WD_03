@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('assets/AJ.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.cell img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.game-info {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#restart-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #6491d6, pink);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: background 0.3s;
+}
+
+#restart-button:hover {
+    background: linear-gradient(45deg, #5279b1, #ff99cc);
+}
+.game-text {
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    margin: 10px 0;
+}
+
+.footer {
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 16px;
+    color: white;
+    margin-top: 20px;
+}
